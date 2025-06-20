@@ -5,21 +5,21 @@
 class NotionTodo < Formula
   desc "A command-line interface for managing todo items using Notion database integration"
   homepage "https://github.com/caffeines/notion-todo"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/caffeines/notion-todo/releases/download/v1.0.0/notion-todo_Darwin_x86_64.tar.gz"
-      sha256 "a15cc183917b8198ff03a13451a7ca42a9514a592c08cdc581665030ac6b0bb8"
+      url "https://github.com/caffeines/notion-todo/releases/download/v1.0.1/notion-todo_Darwin_x86_64.tar.gz"
+      sha256 "46d586e7370567e02b49475cce09904e84c1a0893ebac52afc3172b4ad362077"
 
       def install
         bin.install "todo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/caffeines/notion-todo/releases/download/v1.0.0/notion-todo_Darwin_arm64.tar.gz"
-      sha256 "902caf82956e0cb53dbf75ded7b773d9ef06b06de3e5a784184e7d042ab57c54"
+      url "https://github.com/caffeines/notion-todo/releases/download/v1.0.1/notion-todo_Darwin_arm64.tar.gz"
+      sha256 "284bd142d629d64b750562d18e88e298a290295e556b7fc73f36c679c638ea55"
 
       def install
         bin.install "todo"
@@ -29,15 +29,15 @@ class NotionTodo < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/caffeines/notion-todo/releases/download/v1.0.0/notion-todo_Linux_x86_64.tar.gz"
-      sha256 "02c688ff177401d576037e2fef4073c12e4a5a2d0ef525402a971e84eb7a666a"
+      url "https://github.com/caffeines/notion-todo/releases/download/v1.0.1/notion-todo_Linux_x86_64.tar.gz"
+      sha256 "63b947697365ef3adc0bbf77ff40cfd3d25d5c9c9bc259e1f40087d7a9e23a86"
       def install
         bin.install "todo"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/caffeines/notion-todo/releases/download/v1.0.0/notion-todo_Linux_arm64.tar.gz"
-      sha256 "c17bef446493d427ea4dbf93eebb951d8846a75d5e46d012eabb11fefc211d58"
+      url "https://github.com/caffeines/notion-todo/releases/download/v1.0.1/notion-todo_Linux_arm64.tar.gz"
+      sha256 "34db3849e7754de3437a69f95d1b4f86fb941aa69414eb61785b1de08e9f342d"
       def install
         bin.install "todo"
       end
